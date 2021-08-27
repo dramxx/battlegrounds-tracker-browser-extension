@@ -1,5 +1,9 @@
 import React from "react";
 
-export const StandingCard = ({ standing }) => {
-  return <div className="standing_card">{standing}</div>;
+export const StandingCard = ({ standing, click }) => {
+  return (
+    <div className="standing_card" onClick={() => click(standing)}>
+      {standing}
+    </div>
+  );
 };

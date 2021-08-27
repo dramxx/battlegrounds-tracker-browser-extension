@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HeroCard = ({ hero }) => {
+export const HeroCard = ({ hero, click }) => {
   const getHeroTier = () => {
     switch (hero.tier) {
       case 1:
@@ -17,7 +17,10 @@ export const HeroCard = ({ hero }) => {
   };
 
   return (
-    <div className={`${getHeroTier()} hero_card`}>
+    <div
+      className={`${getHeroTier()} hero_card`}
+      onClick={() => click(hero.name)}
+    >
       <div className="hero_card_name">{hero.name}</div>
     </div>
   );
