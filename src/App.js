@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { RecordPage } from "./pages/RecordPage";
+import { ResultPage } from "./pages/ResultPage";
 
 function App() {
+  const [showRecord, setShowRecord] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main_wrapper">
+      <button
+        onClick={() => setShowRecord(!showRecord)}
+        className="record_button"
+      >
+        +
+      </button>
+      {showRecord && <RecordPage />}
+      <ResultPage />
     </div>
   );
 }
