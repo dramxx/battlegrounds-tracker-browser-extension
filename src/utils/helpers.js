@@ -1,4 +1,4 @@
-import { LOCALSTORAGE_KEY } from "./config";
+import { LOCALSTORAGE_KEY, LOCALE_STRING } from "./config";
 
 export const initLocalStorage = () => {
   if (!loadFromLocalStorage())
@@ -11,4 +11,5 @@ export const saveToLocalStorage = (value) =>
 export const loadFromLocalStorage = () =>
   JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
 
-export const getCurrentDateTime = () => new Date().toLocaleString("sk-SK");
+export const getCurrentDateTime = () =>
+  new Date().toLocaleString(LOCALE_STRING);

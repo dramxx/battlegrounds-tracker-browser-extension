@@ -1,4 +1,5 @@
 export const LOCALSTORAGE_KEY = "results";
+export const LOCALE_STRING = "sk_SK";
 
 export const HEROES = [
   { name: "Dancin’ Deryl", tier: 1 },
