@@ -13,7 +13,7 @@ body {
 }
 
 /********************************************** 
- * LAYOUT 
+ * COMPONENTS 
  **********************************************/
 
 .main_wrapper {
@@ -31,13 +31,12 @@ body {
   transform: scale(1.05);
 }
 
-.record_page {
+.page {
   margin-top: 25px;
 }
 
-.result_page {
+.results_page {
   height: 250px;
-  margin-top: 25px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -50,7 +49,7 @@ body {
   align-items: center;
 }
 
-.standings_list {
+.standings_slider {
   padding-top: 25px;
   width: 80%;
   margin: auto;

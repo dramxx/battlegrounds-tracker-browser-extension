@@ -4,21 +4,19 @@ import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import Slider from "@material-ui/core/Slider";
 
-export const RecordPage = ({ setHero, setStanding }) => {
+export const SaveResult = ({ setHero, setStanding }) => {
   return (
-    <div className="record_page">
-      <div className="heroes_list">
-        <Autocomplete
-          onChange={(e) => setHero(e.target.outerText)}
-          options={HEROES}
-          getOptionLabel={(option) => option.name}
-          style={{ width: "100%" }}
-          renderInput={(params) => (
-            <TextField {...params} label="Select Hero" variant="outlined" />
-          )}
-        />
-      </div>
-      <div className="standings_list">
+    <div className="page">
+      <Autocomplete
+        onChange={(e) => setHero(e.target.outerText)}
+        options={HEROES}
+        getOptionLabel={(option) => option.name}
+        style={{ width: "100%" }}
+        renderInput={(params) => (
+          <TextField {...params} label="Select Hero" variant="outlined" />
+        )}
+      />
+      <div className="standings_slider">
         <Slider
           onChangeCommitted={(e, value) => setStanding(value)}
           getAriaValueText={(value) => value}

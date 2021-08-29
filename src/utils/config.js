@@ -99,3 +99,66 @@ export const STANDINGS = [
     label: 8,
   },
 ];
+
+export const DUMMY_ROWS = [
+  {
+    hero: "Captain Hooktusk",
+    standing: 4,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "The Lich King",
+    standing: 1,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Galakrond",
+    standing: 2,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Yogg-Saron, Hope’s End",
+    standing: 3,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Captain Hooktusk",
+    standing: 4,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "The Lich King",
+    standing: 1,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Galakrond",
+    standing: 2,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Yogg-Saron, Hope’s End",
+    standing: 3,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Captain Hooktusk",
+    standing: 4,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "The Lich King",
+    standing: 1,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Galakrond",
+    standing: 2,
+    date: "29. 8. 2021, 19:30:55",
+  },
+  {
+    hero: "Yogg-Saron, Hope’s End",
+    standing: 3,
+    date: "29. 8. 2021, 19:30:55",
+  },
+];
