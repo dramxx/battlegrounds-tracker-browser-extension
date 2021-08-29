@@ -23,7 +23,7 @@ export const SaveResult = ({ setHero, setStanding }) => {
           aria-labelledby="discrete-slider-custom"
           valueLabelDisplay="off"
           marks={STANDINGS}
-          defaultValue={1}
+          defaultValue={0}
           step={1}
           min={1}
           max={STANDINGS.length}

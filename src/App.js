@@ -40,6 +40,7 @@ function App() {
       <SaveResult setHero={setSelectedHero} setStanding={setSelectedStanding} />
       <div className="submit-button-wrapper">
         <Button
+          disabled={!selectedHero || !selectedStanding}
           variant="outlined"
           color="primary"
           onClick={() => handleSubmit()}
