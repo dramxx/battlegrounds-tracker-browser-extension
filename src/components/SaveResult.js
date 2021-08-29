@@ -1,15 +1,14 @@
 import React from "react";
-import { HEROES, STANDINGS } from "../utils/config";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import Slider from "@material-ui/core/Slider";
 
-export const SaveResult = ({ setHero, setStanding }) => {
+export const SaveResult = ({ heroes, setHero, standings, setStanding }) => {
   return (
     <div className="page">
       <Autocomplete
         onChange={(e) => setHero(e.target.outerText)}
-        options={HEROES}
+        options={heroes}
         getOptionLabel={(option) => option.name}
         style={{ width: "100%" }}
         renderInput={(params) => (
@@ -22,11 +21,11 @@ export const SaveResult = ({ setHero, setStanding }) => {
           getAriaValueText={(value) => value}
           aria-labelledby="discrete-slider-custom"
           valueLabelDisplay="off"
-          marks={STANDINGS}
+          marks={standings}
           defaultValue={0}
           step={1}
           min={1}
-          max={STANDINGS.length}
+          max={standings.length}
         />
       </div>
     </div>

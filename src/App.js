@@ -8,6 +8,7 @@ import {
   loadFromLocalStorage,
   getCurrentDateTime,
 } from "./utils/helpers";
+import { HEROES, STANDINGS } from "./utils/config";
 
 function App() {
   const [selectedHero, setSelectedHero] = useState(null);
@@ -37,7 +38,12 @@ function App() {
 
   return (
     <div className="main_wrapper">
-      <SaveResult setHero={setSelectedHero} setStanding={setSelectedStanding} />
+      <SaveResult
+        heroes={HEROES}
+        standings={STANDINGS}
+        setHero={setSelectedHero}
+        setStanding={setSelectedStanding}
+      />
       <div className="submit-button-wrapper">
         <Button
           disabled={!selectedHero || !selectedStanding}
