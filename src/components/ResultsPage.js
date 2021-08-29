@@ -6,13 +6,13 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-export const ResultsPage = ({ rows }) => {
+export const ResultsPage = ({ data }) => {
   return (
     <div className="results_page page">
       <TableContainer component={Paper}>
         <Table aria-label="simple table">
           <TableBody>
-            {rows.map((row, i) => (
+            {data.map((row, i) => (
               <TableRow key={`key_${i}`}>
                 <TableCell component="th" scope="row">
                   {row.hero}

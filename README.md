@@ -17,3 +17,5 @@ v1.2
 v1.3
 
 - utilize Hearthstone API
+
+![Battlegrounds tracker](./public/images/bgt.png)

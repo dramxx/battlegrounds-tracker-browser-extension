@@ -1,3 +1,5 @@
+export const LOCALSTORAGE_KEY = "results";
+
 export const HEROES = [
   { name: "Dancin’ Deryl", tier: 1 },
   { name: "Mutanus the Devourer", tier: 1 },
@@ -97,68 +99,5 @@ export const STANDINGS = [
   {
     value: 8,
     label: 8,
-  },
-];
-
-export const DUMMY_ROWS = [
-  {
-    hero: "Captain Hooktusk",
-    standing: 4,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "The Lich King",
-    standing: 1,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Galakrond",
-    standing: 2,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Yogg-Saron, Hope’s End",
-    standing: 3,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Captain Hooktusk",
-    standing: 4,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "The Lich King",
-    standing: 1,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Galakrond",
-    standing: 2,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Yogg-Saron, Hope’s End",
-    standing: 3,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Captain Hooktusk",
-    standing: 4,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "The Lich King",
-    standing: 1,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Galakrond",
-    standing: 2,
-    date: "29. 8. 2021, 19:30:55",
-  },
-  {
-    hero: "Yogg-Saron, Hope’s End",
-    standing: 3,
-    date: "29. 8. 2021, 19:30:55",
   },
 ];
