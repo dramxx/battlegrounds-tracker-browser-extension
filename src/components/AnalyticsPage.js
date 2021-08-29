@@ -1,9 +1,5 @@
 import React from "react";
 
-export const AnalyticsPage = () => {
-  return (
-    <div className="page">
-      <div>AnalyticsPage</div>
-    </div>
-  );
+export const AnalyticsPage = ({ data }) => {
+  return <div className="page analytics_page"></div>;
 };
