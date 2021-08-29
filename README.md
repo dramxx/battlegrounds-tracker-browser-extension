@@ -2,7 +2,7 @@
 
 Simple browser plugin which tracks standings in Hearthstone game mode Battlegrounds.
 
-## TODOs:
+## TODO:
 
 v1.1
 
@@ -12,4 +12,8 @@ v1.1
 
 v1.2
 
-- hearthstone like css
+- Hearthstone like css
+
+v1.3
+
+- utilize Hearthstone API
