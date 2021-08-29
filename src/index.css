@@ -3,6 +3,7 @@
  **********************************************/
 
 body {
+  overflow: hidden;
   user-select: none;
   margin: 0;
   font-family: "Work Sans", sans-serif;
@@ -35,72 +36,22 @@ body {
 }
 
 .result_page {
+  height: 250px;
   margin-top: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.submit-button-wrapper {
+  margin-top: 25px;
+  width: 100%;
   display: flex;
   justify-content: center;
-}
-
-/********************************************** 
- * HEROES 
- **********************************************/
-
-.hero_card {
-  display: inline-block;
-  text-align: center;
-  border-radius: 5px;
-  margin: 3px;
-}
-
-.t1_hero {
-  border: 1px solid #000;
-}
-
-.t2_hero {
-  border: 1px solid #000;
-}
-
-.t3_hero {
-  border: 1px solid #000;
-}
-
-.t4_hero {
-  border: 1px solid #000;
-}
-
-.hero_card:hover {
-  font-weight: bold;
-  transform: scale(1.05);
-}
-
-.hero_card_name {
-  padding: 5px;
-}
-
-/********************************************** 
- * STANDINGS 
- **********************************************/
-
-.standing_card {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border: 1px solid #000;
-  border-radius: 5px;
-  margin: 3px;
 }
-
-.standing_card:hover {
-  font-weight: bold;
-  transform: scale(1.05);
-}
-
-/********************************************** 
- * RESULTS 
- **********************************************/
 
 .standings_list {
-  margin-top: 25px;
+  padding-top: 25px;
+  width: 80%;
+  margin: auto;
 }

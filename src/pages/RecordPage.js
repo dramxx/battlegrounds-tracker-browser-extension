@@ -1,25 +1,36 @@
 import React from "react";
 import { HEROES, STANDINGS } from "../utils/config";
-import { HeroCard } from "../components/HeroCard";
-import { StandingCard } from "../components/StandingCard";
+import TextField from "@material-ui/core/TextField";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import Slider from "@material-ui/core/Slider";
 
-export const RecordPage = ({ hero, setHero, standing, setStanding }) => {
+export const RecordPage = ({ setHero, setStanding }) => {
   return (
     <div className="record_page">
-      {!hero && (
-        <div className="heroes_list">
-          {HEROES.map((hero) => (
-            <HeroCard hero={hero} click={setHero} />
-          ))}
-        </div>
-      )}
-      {!standing && (
-        <div className="standings_list">
-          {STANDINGS.map((standing) => (
-            <StandingCard standing={standing} click={setStanding} />
-          ))}
-        </div>
-      )}
+      <div className="heroes_list">
+        <Autocomplete
+          onChange={(e) => setHero(e.target.outerText)}
+          options={HEROES}
+          getOptionLabel={(option) => option.name}
+          style={{ width: "100%" }}
+          renderInput={(params) => (
+            <TextField {...params} label="Select Hero" variant="outlined" />
+          )}
+        />
+      </div>
+      <div className="standings_list">
+        <Slider
+          onChangeCommitted={(e, value) => setStanding(value)}
+          getAriaValueText={(value) => value}
+          aria-labelledby="discrete-slider-custom"
+          valueLabelDisplay="off"
+          marks={STANDINGS}
+          defaultValue={1}
+          step={1}
+          min={1}
+          max={STANDINGS.length}
+        />
+      </div>
     </div>
   );
 };
