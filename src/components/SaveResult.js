@@ -9,10 +9,11 @@ export const SaveResult = ({ heroes, setHero, standings, setStanding }) => {
   return (
     <div className="page">
       <Autocomplete
-        onChange={(e) => setHero(e.target.outerText)}
-        options={heroes}
-        getOptionLabel={(option) => option.name}
         style={{ width: "100%" }}
+        onChange={(e) => setHero(e.target.outerText)}
+        getOptionLabel={(option) => option.name}
+        options={heroes.sort((a, b) => a.tier === b.tier)}
+        groupBy={(hero) => `Tier ${hero.tier}`}
         renderInput={(params) => (
           <TextField {...params} label="Select Hero" variant="outlined" />
         )}

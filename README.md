@@ -7,7 +7,7 @@ Simple browser plugin which tracks standings in Hearthstone game mode Battlegrou
 v1.1
 
 - delete / edit a table row
-- split heroes in Selectbox by tier
+- split heroes in Selectbox by tier, add highlight
 - analytics tab ( WR per Hero, ... )
 
 v1.2
