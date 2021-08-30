@@ -13,7 +13,6 @@ import { HEROES, STANDINGS } from "./utils/config";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 
 function App() {
@@ -37,10 +36,8 @@ function App() {
     };
     const result = [...existingResults, currentResult];
 
-    if (selectedHero && selectedStanding) {
-      saveToLocalStorage(result);
-      setData(loadFromLocalStorage().reverse());
-    }
+    saveToLocalStorage(result);
+    setData(loadFromLocalStorage().reverse());
   };
 
   const handleTabChange = (event, newValue) => {
